@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+
+</head>
+
+<body style="height: 100%; margin: 0">
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo right" style="margin-right: 10px">Welcome, {{ unmae }}</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="">One For ALL</a></li>
+
+        </ul>
+    </div>
+</nav>
+<div class="" style="  position: absolute; top: 52px; bottom: 0; width: 100%; background: #e1f5fe ">
+    <div class="row s12" style=" height: auto; width: 100%; left: 20px">
+
+        <div class="col s1"></div>
+        <div class="col s4"
+             style="border-radius: 5px; margin: 2%; height: 75vh; background: rgba(255,255,255,0.7); box-shadow: 1px 8px 15px -6px black">
+            <div>
+                <form method="POST">
+
+                    <div class="row">
+                        <div class="col s2"><p style="font-size: medium; font-family: 'Times New Roman'">Institute :</p>
+                        </div>
+                        <div class="col s8">
+                            <input type="text" id="institute_name" name="institute_name" required>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col s2"><p style="font-size: medium; font-family: 'Times New Roman'">Degree :</p>
+                        </div>
+                        <div class="col s8">
+                            <input type="text" id="degree" name="degree" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s2"><p style="font-size: medium; font-family: 'Times New Roman'">CGPA :</p>
+                        </div>
+                        <div class="col s8">
+                            <input type="text" id="marks" name="makrs" required>
+                        </div>
+                    </div>
+
+
+                    <button class="btn waves-effect waves-light" value="submit_edu" type="submit" name="submit"
+                            style="margin-top: 1vh">Add Education
+
+                    </button>
+
+
+                </form>
+
+
+                <hr>
+                {% if data1 == "null" %}
+                    <div>
+                        <p>No Education Data Available</p>
+                    </div>
+                {% else %}
+                    <div class="" style="width: 100%; height: 35vh; margin: 0; overflow: auto">
+                        <table class="striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Institute</th>
+                                <th>Degree</th>
+                                <th>CGPA</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            {% for i in data1 %}
+                            <tr>
+                                <td>{{ i.0 }}</td>
+                                <td>{{ i.1 }}</td>
+                                <td>{{ i.2 }}</td>
+                                <td>{{ i.3 }}</td>
+
+                            </tr>
+                            {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                {% endif %}
+
+
+            </div>
+
+
+        </div>
+        <div class="col s4"
+             style="border-radius: 5px; margin: 2%; height: 75vh; background: rgba(255,255,255,1); box-shadow: 0 8px 15px -6px black">
+            <div>
+                <form method="POST">
+
+                    <div class="row">
+                        <div class="col s2"><p style="font-size: medium; font-family: 'Times New Roman'">Workplace </p>
+                        </div>
+                        <div class="col s8">
+                            <input type="text" id="work_place" name="work_place" required>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col s2"><p style="font-size: medium; font-family: 'Times New Roman'">Role :</p>
+                        </div>
+                        <div class="col s8">
+                            <input type="text" id="designation" name="designation" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s2"><p style="font-size: medium; font-family: 'Times New Roman'">From :</p>
+                        </div>
+                        <div class="col s3">
+                            <input type="date" id="from_d" name="from_d" required>
+                        </div>
+                        <div class="col s1"><span></span></div>
+                        <div class="col s1"><p style="font-size: medium; font-family: 'Times New Roman'">To </p></div>
+                        <div class="col s3">
+                            <input type="date" id="to_d" name="to_d" required>
+                        </div>
+
+
+                    </div>
+
+                    <button class="btn waves-effect waves-light" value="submit_exp" type="submit" name="submit"
+                            style="margin-top: 1vh">Add Experience
+
+                    </button>
+                </form>
+                <hr>
+
+                {% if data2 == "null" %}
+                    <div>
+                        <p>No Education Data Available</p>
+                    </div>
+                {% else %}
+                    <div class="" style="width: 100%; height: 35vh; margin: 0; overflow: auto">
+                        <table class="striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Organization</th>
+                                <th>Role</th>
+                                <th>From</th>
+                                <th>To</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            {% for j in data2 %}
+                            <tr>
+                                <td>{{ j.0 }}</td>
+                                <td>{{ j.1 }}</td>
+                                <td>{{ j.2 }}</td>
+                                <td>{{ j.3 }}</td>
+                                <td>{{ j.4 }}</td>
+
+                            </tr>
+                            {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+                {% endif %}
+
+            </div>
+
+
+        </div>
+        <div class="col s1">
+        </div>
+        <div class="row s12">
+            <div class="col s5"><span></span></div>
+            <div class="col s4"><a href="\Logout">
+                <button class="btn waves-effect waves-light">Logout</button>
+            </a></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script type="text/javascript" src="../static/js/query-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../static/js/materialize.js"></script>
+    <script type="text/javascript" src="../static/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../static/js/jQuery.js"></script>
+    <script type="text/javascript" src="../static/js/jqueryUI.js"></script>
+
+</body>
+</html>
