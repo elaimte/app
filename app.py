@@ -5,14 +5,13 @@ from dbcalls import AddTableEducation, AddTableExperience, InsertTableEducation,
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'World Ends Here'
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///T0.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///USERLIST.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 db = SQLAlchemy(app)
 
 
 class User1(db.Model):
     user_id = db.Column(db.String, primary_key=True)
-    user_name = db.Column(db.String)
     username = db.Column(db.String(200))
     password = db.Column(db.String(200))
     dbname = db.Column(db.String(200))
@@ -72,7 +71,6 @@ def do_stuff(uid):
                 institute_name = request.form["institute_name"]
                 degree = request.form["degree"]
                 makrs = request.form["makrs"]
-                InsertTableEducation(user_db, institute_name, degree, makrs)
                 InsertTableEducation(user_db, institute_name, degree, makrs)
                 edu_data = TableDataEducation(user_db)
                 exp_data = TableDataExperience(user_db)

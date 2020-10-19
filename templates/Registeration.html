@@ -9,13 +9,22 @@
 
     <meta charset="UTF-8">
     <title>Registration</title>
+
+     <style>
+        body {
+            background-size: auto;
+            height: 100%;
+            background: url("../static/img/bg_login3.jpg") no-repeat center;
+        }
+    </style>
 </head>
 <body>
 
 <div class="container-fluid ">
         <div class="row ">
-            <div class="col s6 {% if get_flashed_messages() %}errormsg{% endif %}" style="text-align: center">
-                <form style=" background: whitesmoke ;border: 2px #004d40 solid ; border-radius: 15px; padding: 20px; margin-left: 13%; margin-top: 5%"
+            <div class="col s5"></div>
+            <div class="col s6 {% if get_flashed_messages() %}errormsg{% endif %}" style="text-align: center; position: center; margin-top: 10%">
+               <form style=" background: rgba(255,255,255,0.8) ;border: 2px #004d40 solid ; border-radius: 15px; padding: 20px; margin-left: 13%; margin-top: 5%"
                       class="col s8" method="post">
 
 
@@ -38,7 +47,7 @@
 
                     </button>
 
-                    <a href="/Recover"><p>Forget Password</p></a>
+
 
                 </form>
                 <div class="col s12">

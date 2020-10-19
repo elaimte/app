@@ -17,6 +17,11 @@ def IdGenerator():
     return result_str
 
 
+def RegisterUser(username,password):
+    mycursor = mydb.cursor()
+
+
+
 def CreateDatabase(dbname):
     mycursor = mydb.cursor()
     sql = 'CREATE DATABASE {db_name}'
@@ -62,7 +67,7 @@ def InsertTableEducation(dbname, inst, deg, cgp):
     db_cursor = db_con.cursor()
 
     sql_insert = "INSERT INTO education ( institute, degree, cgpa) VALUES( \"{}\", \"{}\",\"{}\")".format(inst, deg,
-                                                                                                      cgp)
+                                                                                                          cgp)
     db_cursor.execute(sql_insert)
     db_con.commit()
     db_cursor.close()
@@ -124,4 +129,3 @@ def TableDataExperience(dbname):
         print(e)
         records = 'null'
     return records
-
