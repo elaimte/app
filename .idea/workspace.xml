@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="239440cb-9404-459c-a357-f964660a13cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USERLIST.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bg_login.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bg_login1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bg_login2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bg_login3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T0.db" beforeDir="false" afterPath="$PROJECT_DIR$/T0.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbcalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbcalls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/materialize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Registeration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Registeration.html" afterDir="false" />
-    </list>
+    <list default="true" id="239440cb-9404-459c-a357-f964660a13cc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +87,16 @@
       <option name="presentableId" value="Default" />
       <updated>1603045278499</updated>
       <workItem from="1603045279602" duration="3904000" />
-      <workItem from="1603083154261" duration="3706000" />
+      <workItem from="1603083154261" duration="3897000" />
     </task>
+    <task id="LOCAL-00001" summary="Little CSS Adda">
+      <created>1603087077223</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603087077223</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Little CSS Adda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Little CSS Adda" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NewProject$NewProject.coverage" NAME="NewProject Coverage Results" MODIFIED="1603086896026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
